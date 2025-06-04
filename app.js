@@ -111,9 +111,7 @@ class App {
       ([code, rate]) => new Currency(code, rate)
     );
 
-    this.#currencies = [baseCurrency, ...otherCurrencies].filter(
-      (item, index) => index < 10
-    );
+    this.#currencies = [baseCurrency, ...otherCurrencies];
   }
 
   #renderCurrencies() {
